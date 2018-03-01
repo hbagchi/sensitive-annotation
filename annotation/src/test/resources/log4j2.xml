@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration packages="com.home.log4j2.pattern">
+       <Appenders>
+    <Console name="STDOUT" target="SYSTEM_OUT">
+     <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %k%n"/>
+
+    </Console>
+  </Appenders>
+  <loggers>
+     <Logger name="rootLogger" level="DEBUG" />
+     <root level="DEBUG">
+            <appender-ref ref="STDOUT" level="DEBUG" />
+      </root>
+  </loggers>
+</configuration>
